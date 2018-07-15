@@ -1,22 +1,43 @@
 body {
-    background-image: url("../images/game\ logo.png"), no-repeat;
-    padding-top: 20px;
+    padding-top: 40px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: black;
     background-size: cover;
     
 }
+
 .container { 
     text-align: center;
     
 }
 
+.jumbotron {
+    background: black;
+    
+}
+
+h1 {
+    font-size: 70px;
+    color: red;
+    
+}
+
+.lead {
+    color: white;
+    font-size: 40px;
+}
+
 .card {
-    background-color: aquamarine;
+    background-color: gray;
+}
+
+.card-header {
+    font-size: 30px;
+
 }
 
 #WordToGuess {
-    background-color: bisque;
+    background-color: seashell;
 }
 
 
