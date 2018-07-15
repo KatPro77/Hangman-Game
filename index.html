@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <!-- html - container for home page  -->
+ <div class = "container">
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">SuperHero Hangman</h1>
+          <p class="lead">Be a hero - guess the letters before you get hanged!!</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          Guess the Word
+        </div>
+        <div class="card-body">
+          <h2 id= "WordToGuess">_ _ _ _ _ _ _ _ _ _ </h2>
+                    
+        </div>
+      </div>
+
+      <br>
+
+      <div class="card">
+        <div class="card-body">
+          Guessed Letters: <span id = "userGuesses"></span>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="card">
+        <div class="card-body">
+          Guesses Left: <span id = "guessesLeft">12</span>
+        </div>
+      </div>
+
+      <br>
+      
+      <div class="card">
+        <div class="card-body">
+          Wins: <span id = "wins">0</span>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="card">
+        <div class="card-body">
+          Losses: <span id = "loss">0</span>
+        </div>
+      </div>
+
+
+ </div>
+
+
+  <!-- Link to Javascript -->
+ <script src = "game.js"></script>
+
+
+
+</body>
+</html>
