@@ -14,7 +14,8 @@ const maxTries = 12;            // Maximum number of tries player has
 //counts
 var wins = 0;                   // Number of wins 
 var loss = 0;                   // Number of losses
-var guessesLeft = 12;            // How many tries the player has left
+var guessesLeft = 12;           // How many tries the player has left
+
 
 
 
@@ -23,6 +24,7 @@ function gameStart () {
     selectedWord = nameIndex[Math.floor(Math.random() * nameIndex.length)];
     lettersinWord = selectedWord.split("");
     blanks = lettersinWord.length;
+    alert("Let's Play!")
 
     //restart
     guessesLeft = 12;
@@ -56,7 +58,6 @@ function verifyLetters(letter) {
     for (var i = 0; i < blanks; i++) {
         if(selectedWord[i] == letter) {
             lettersinWord = true;
-            alert("Letter found");
         }
     }
 
@@ -88,6 +89,8 @@ function nextRound() {
 
 
     //winning round
+
+
     if (lettersinWord.toString() == blankSpaces.toString()) {
         wins++;
         alert("You Win!!!");
@@ -121,5 +124,5 @@ document.onkeyup = function(event) {
     nextRound(guessedLetters); 
 
     console.log(guessedLetters);
-}
+};
 
