@@ -97,7 +97,7 @@ function nextRound() {
 
         // also update win counts in the html
         document.getElementById("wins").innerHTML = wins;
-
+        
         gameStart();
     }
 
@@ -107,6 +107,7 @@ function nextRound() {
 
         // update loss count
         document.getElementById("loss").innerHTML = loss;
+        
         
         gameStart();
     }
@@ -124,5 +125,5 @@ document.onkeyup = function(event) {
     nextRound(guessedLetters); 
 
     console.log(guessedLetters);
-};
+}
 
